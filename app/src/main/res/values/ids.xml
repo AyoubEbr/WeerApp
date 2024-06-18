@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="registerPassword" type="id" />
+    <item name="registerUsername" type="id" />
+    <item name="username" type="id" />
+    <item name="password" type="id" />
+    <item name="etCity" type="id" />
+    <item name="btnGet" type="id" />
+    <item name="tvResult" type="id" />
+</resources>

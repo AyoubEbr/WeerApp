@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- EditText voor Wachtwoord -->
+    <EditText
+        android:id="@+id/etWachtwoord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Wachtwoord"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/logoImageView"
+        app:layout_constraintTop_toBottomOf="@id/etInlognaam"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <!-- Button voor Registreren -->
+    <Button
+        android:id="@+id/registreren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#070606"
+        android:onClick="onClick"
+        android:text="Registreren"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/logoImageView"
+        app:layout_constraintTop_toBottomOf="@id/inloggen"
+        tools:ignore="HardcodedText,OnClick" />
+
+    <!-- EditText voor Inlognaam -->
+    <EditText
+        android:id="@+id/etInlognaam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Inlognaam"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logoImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+    <!-- Button voor Inloggen -->
+    <Button
+        android:id="@+id/inloggen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#191817"
+        android:onClick="onClick"
+        android:text="Inloggen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/logoImageView"
+        app:layout_constraintTop_toBottomOf="@id/etWachtwoord"
+        tools:ignore="HardcodedText,OnClick" />
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="183dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/aichigo_desc"
+        android:src="@drawable/aichigo"
+        app:layout_constraintEnd_toStartOf="@+id/etInlognaam"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aichigo"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/aichigo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
