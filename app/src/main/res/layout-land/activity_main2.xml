@@ -57,4 +57,12 @@
         app:layout_constraintTop_toBottomOf="@id/getWeatherButton"
         tools:ignore="Autofill,HardcodedText" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits By Ayoub"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="378dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

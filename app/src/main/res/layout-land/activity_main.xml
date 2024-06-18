@@ -87,4 +87,12 @@
         tools:ignore="ContentDescription"
         tools:srcCompat="@drawable/aichigo" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits By Ayoub"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="370dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

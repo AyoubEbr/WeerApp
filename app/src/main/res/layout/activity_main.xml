@@ -88,4 +88,12 @@
         app:layout_constraintTop_toBottomOf="@id/inloggen"
         tools:ignore="HardcodedText,OnClick" />
 
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits By Ayoub"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="705dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
